@@ -9,3 +9,19 @@ Non è consentito usare nessun metodo proprio degli array (come includes, per es
 Si può fare? Certo che si basta ragionare un po’.
 Nota: Non è necessario provvedere alla validazione delle email
 */
+
+const listEmail = ['odon@email.com', 'airoldi@email.com', 'orso@email.com', 'cocker@email.com'];
+
+const yourEmail = prompt('Inserisci la tua Email');
+
+let accessParty = 'Non sei invitato alla festa';
+
+for (i = 0; i < listEmail.length; i++) {
+        
+    if ( listEmail[i] == yourEmail ) {
+        accessParty = 'Sei invitato alla festa';
+    }
+    
+}
+
+console.log(accessParty);
